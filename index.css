@@ -1,4 +1,5 @@
 body {
+  font-family: 'Verdana';
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,8 +7,21 @@ body {
   max-width: 50%;
 }
 
+.title {
+  color:#384075;
+  margin-bottom: 50px;
+}
+
 button {
+  font-family: 'Verdana';
   width: 150px;
   padding: 10px;
-  margin-bottom: 15px;
+  margin-bottom: 30px;
+  border: 0;
+  background: #BFC6F4;
+}
+
+button:hover {
+  background: #585B73;
+  color: #fff;
 }
