@@ -7,5 +7,6 @@ $('.button2').click(function() {
 })
 
 $('.button3').click(function() {
-  $(this).animate({width: '+=50px', height: '+=10px', fontSize: '20px'}, 'slow').animate({width: '-=50px', height: '-=10px', fontSize: '14px'}, 'slow');
+  $(this).animate({width: '+=50px', height: '+=10px', fontSize: '20px'}, 'slow')
+    .animate({width: '-=50px', height: '-=10px', fontSize: '14px'}, 'slow');
 })
