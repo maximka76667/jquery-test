@@ -1,7 +1,7 @@
 const buttons = Array.from($('button'));
 
 buttons.forEach(function(button, index) {
-  button.prepend(index + '. ');
+  button.prepend(index + 1 + '. ');
 })
 
 $('.button1').click(function() {
