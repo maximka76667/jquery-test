@@ -8,20 +8,56 @@ body {
 }
 
 .title {
-  color:#384075;
+  color:#000;
   margin-bottom: 50px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.content {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 button {
   font-family: 'Verdana';
   width: 150px;
   padding: 10px;
-  margin-bottom: 30px;
+  margin: 15px 0;
   border: 0;
-  background: #BFC6F4;
+  background: #fff;
+  border: 1px solid #000;
+  outline: 0;
+  position: relative;
+  box-sizing: border-box;
 }
 
-button:hover {
-  background: #585B73;
+button:hover,
+button:focus {
+  background: #222;
   color: #fff;
+}
+
+button:disabled {
+  border: 1px solid #ccc;
+}
+
+p {
+  margin: 0;
+}
+
+.popup input {
+  margin: 0;
+  width: 150px;
+  height: 20px;
+  top: 100%;
+  left: 0;
+  background: #fff;
+  border: 1px solid #000;
+  box-sizing: border-box;
 }
