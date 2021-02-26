@@ -18,10 +18,10 @@ $('.button3').click(function() {
 })
 
 $('.button4').click(function() {
-  if($(this).text() == '3. Text Changer') {
-    $(this).text('3. Hello')
+  if($(this).text() == '4. Text Changer') {
+    $(this).text('4. Hello')
   } else {
-    $(this).text('3. Text Changer');
+    $(this).text('4. Text Changer');
   }
 })
 
@@ -31,7 +31,7 @@ $('.button5').click(function() {
 
 $('.button6').click(function() {
   $(this).attr('disabled', 'true')
-    .text('Disabled');
+    .text('6. Disabled');
 })
 
 $('.button7').click(function() {
@@ -43,8 +43,8 @@ $('.button8').click(function() {
 })
 
 $('.button9').click(function() {
-  $('.button7').empty().text('6. Add text before');
-  $('.button8').empty().text('7. Add text after');
+  $('.button7').empty().text('7. Add text before');
+  $('.button8').empty().text('8. Add text after');
   $('.button10').css('background', '#fff');
   $('.button10').hover(function() {
     $(this).css('background', '#000')
@@ -69,3 +69,23 @@ $('.button12').click(function() {
   alert('Height=' + $(this).outerHeight() + 'px Width=' + $(this).outerWidth() + 'px');
 })
 
+$('.button13').click(function() {
+  console.log($(this).parents());
+})
+
+$('.button14').click(function() {
+  var audio = new Audio(); // Создаём новый элемент Audio
+  audio.src = './music/doctor.mpeg'; // Указываем путь к звуку "клика"
+  audio.autoplay = true; // Автоматически запускаем
+});
+
+$('.button15').click(function() {
+
+  $('.videoArthas').toggle()
+  updateVideo();
+})
+
+const updateVideo = () => {
+  const leg = $('.videoArthas').attr("src");
+  $('.videoArthas').attr("src", leg);
+}
